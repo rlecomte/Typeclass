@@ -6,6 +6,7 @@ import scalaprops.Scalaprops
 
 object ListTest extends Scalaprops {
 
-//  val semigroup = SemigroupLaws[List[Int]].all
+  import typeclass.std.list._
+  val semigroup = SemigroupLaws[List[Int]].all
 
 }
