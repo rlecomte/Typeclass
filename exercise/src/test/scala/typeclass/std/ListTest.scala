@@ -1,12 +1,12 @@
 package typeclass.std
 
-import typeclass.SemigroupLaws
-
 import scalaprops.Scalaprops
+
+import typeclass.FunctorLaws
+import typeclass.std.list._
 
 object ListTest extends Scalaprops {
 
-  import typeclass.std.list._
-  val semigroup = SemigroupLaws[List[Int]].all
+  val func = FunctorLaws[List].all
 
 }

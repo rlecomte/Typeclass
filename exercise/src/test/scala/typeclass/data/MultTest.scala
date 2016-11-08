@@ -1,11 +1,11 @@
 package typeclass.data
 
-import typeclass.SemigroupLaws
-
 import scalaprops.Scalaprops
+
+import typeclass.SemigroupLaws
 
 object MultTest extends Scalaprops {
 
-//  val semigroup = SemigroupLaws[Mult].all
+  val monoid = SemigroupLaws[Mult].all
 
 }

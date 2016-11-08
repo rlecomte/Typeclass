@@ -1,6 +1,6 @@
 package typeclass.std
 
-import typeclass.{Monoid, Semigroup}
+import typeclass.{Functor, Monoid}
 
 object option {
 
@@ -12,6 +12,10 @@ object option {
       case (Some(xx), Some(yy)) => Some(evA.combine(xx, yy))
       case _ => None
     }
+  }
+
+  implicit val functor: Functor[Option] = new Functor[Option] {
+    override def map[A, B](fa: Option[A])(f: (A) => B): Option[B] = fa.map(f)
   }
 
 }

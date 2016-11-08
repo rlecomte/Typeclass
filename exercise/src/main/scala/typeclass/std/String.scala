@@ -1,6 +1,6 @@
 package typeclass.std
 
-import typeclass.{Monoid, Semigroup}
+import typeclass.Monoid
 
 object string {
 

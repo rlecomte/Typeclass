@@ -1,8 +1,8 @@
 package typeclass.data
 
-import typeclass.Semigroup
-
 import scalaprops.Gen
+
+import typeclass.Semigroup
 
 case class Mult(value: Int)
 
